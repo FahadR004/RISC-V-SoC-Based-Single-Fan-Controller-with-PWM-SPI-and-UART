@@ -1,0 +1,224 @@
+Run the command:
+> python run_riscv_tests.py --tests-dir ./elf_binaries --design-dir . 
+
+Expected Output:
+Found 40 test(s): rv32ui-p-add, rv32ui-p-addi, rv32ui-p-and, rv32ui-p-andi, rv32ui-p-auipc, rv32ui-p-beq, rv32ui-p-bge, rv32ui-p-bgeu, rv32ui-p-blt, rv32ui-p-bltu, rv32ui-p-bne, rv32ui-p-fence_i, rv32ui-p-jal, rv32ui-p-jalr, rv32ui-p-lb, rv32ui-p-lbu, rv32ui-p-lh, rv32ui-p-lhu, rv32ui-p-lui, rv32ui-p-lw, rv32ui-p-ma_data, rv32ui-p-or, rv32ui-p-ori, rv32ui-p-sb, rv32ui-p-sh, rv32ui-p-simple, rv32ui-p-sll, rv32ui-p-slli, rv32ui-p-slt, rv32ui-p-slti, rv32ui-p-sltiu, rv32ui-p-sltu, rv32ui-p-sra, rv32ui-p-srai, rv32ui-p-srl, rv32ui-p-srli, rv32ui-p-sub, rv32ui-p-sw, rv32ui-p-xor, rv32ui-p-xori
+
+=== Discovering design files ===
+  Decode\control_unit.sv
+  Decode\decode.sv
+  Decode\immediate_gen.sv
+  Decode\register_file.sv
+  Execute\alu.sv
+  Execute\alu_control.sv
+  Execute\branch_adder_mux.sv
+  Execute\execute.sv
+  Fetch\fetch.sv
+  Fetch\instr_mem.sv
+  Fetch\pc.sv
+  Fetch\pc_adder.sv
+  Memory\data_mem.sv
+  Memory\memory.sv
+  tb_top_rv32_scdp.sv
+  top_rv32_scdp.sv
+  WriteBack\write_back.sv
+(17 files)
+
+=== Compiling design + testbench ===
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 02:18:16 on Aug 25,2026
+vlog -sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Decode\control_unit.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Decode\decode.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Decode\immediate_gen.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Decode\register_file.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Execute\alu.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Execute\alu_control.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Execute\branch_adder_mux.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Execute\execute.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Fetch\fetch.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Fetch\instr_mem.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Fetch\pc.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Fetch\pc_adder.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Memory\data_mem.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\Memory\memory.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\tb_top_rv32_scdp.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\top_rv32_scdp.sv D:\Fahad\IC Design\RISCV Single Cycle Datapath\WriteBack\write_back.sv 
+-- Compiling module control_unit
+-- Compiling module Decode
+-- Compiling module immediate_generator
+-- Compiling module register_file
+-- Compiling module alu
+-- Compiling module alu_control_module
+-- Compiling module branch_adder_mux
+-- Compiling module Execute
+-- Compiling module Fetch
+-- Compiling module instr_memory
+-- Compiling module pc_register
+-- Compiling module pc_adder
+-- Compiling module data_memory
+-- Compiling module Memory
+-- Compiling module tb_top_rv32_scdp
+-- Compiling module top_rv32_scdp
+-- Compiling module Write_Back
+
+Top level modules:
+        tb_top_rv32_scdp
+End time: 02:18:16 on Aug 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+=== Compile OK ===
+
+--- Running rv32ui-p-add (Instr: 431 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-add.instr.hex (gp=1, cycles=499)
+
+--- Running rv32ui-p-addi (Instr: 287 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-addi.instr.hex (gp=1, cycles=276)
+
+--- Running rv32ui-p-and (Instr: 415 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-and.instr.hex (gp=1, cycles=519)
+
+--- Running rv32ui-p-andi (Instr: 239 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-andi.instr.hex (gp=1, cycles=232)
+
+--- Running rv32ui-p-auipc (Instr: 141 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-auipc.instr.hex (gp=1, cycles=92)
+
+--- Running rv32ui-p-beq (Instr: 303 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-beq.instr.hex (gp=1, cycles=325)
+
+--- Running rv32ui-p-bge (Instr: 319 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-bge.instr.hex (gp=1, cycles=343)
+
+--- Running rv32ui-p-bgeu (Instr: 335 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-bgeu.instr.hex (gp=1, cycles=368)
+
+--- Running rv32ui-p-blt (Instr: 303 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-blt.instr.hex (gp=1, cycles=325)
+
+--- Running rv32ui-p-bltu (Instr: 303 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-bltu.instr.hex (gp=1, cycles=350)
+
+--- Running rv32ui-p-bne (Instr: 303 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-bne.instr.hex (gp=1, cycles=325)
+
+--- Running rv32ui-p-fence_i (Instr: 165 words, Data: 8 words) ---
+    # [TIMEOUT] rv32ui-p-fence_i.instr.hex: exceeded 100000 cycles without reaching ecall (stuck PC=0x2040)
+
+--- Running rv32ui-p-jal (Instr: 143 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-jal.instr.hex (gp=1, cycles=89)
+
+--- Running rv32ui-p-jalr (Instr: 175 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-jalr.instr.hex (gp=1, cycles=149)
+
+--- Running rv32ui-p-lb (Instr: 271 words, Data: 4 words) ---
+    # [PASS] rv32ui-p-lb.instr.hex (gp=1, cycles=287)
+
+--- Running rv32ui-p-lbu (Instr: 271 words, Data: 4 words) ---
+    # [PASS] rv32ui-p-lbu.instr.hex (gp=1, cycles=287)
+
+--- Running rv32ui-p-lh (Instr: 287 words, Data: 4 words) ---
+    # [PASS] rv32ui-p-lh.instr.hex (gp=1, cycles=303)
+
+--- Running rv32ui-p-lhu (Instr: 287 words, Data: 4 words) ---
+    # [PASS] rv32ui-p-lhu.instr.hex (gp=1, cycles=312)
+
+--- Running rv32ui-p-lui (Instr: 143 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-lui.instr.hex (gp=1, cycles=99)
+
+--- Running rv32ui-p-lw (Instr: 303 words, Data: 4 words) ---
+    # [PASS] rv32ui-p-lw.instr.hex (gp=1, cycles=317)
+
+--- Running rv32ui-p-ma_data (Instr: 463 words, Data: 96 words) ---
+    # [FAIL] rv32ui-p-ma_data.instr.hex: check #1 failed (a0=0x3, gp=0x3, cycles=83)
+
+--- Running rv32ui-p-or (Instr: 431 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-or.instr.hex (gp=1, cycles=522)
+
+--- Running rv32ui-p-ori (Instr: 239 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-ori.instr.hex (gp=1, cycles=239)
+
+--- Running rv32ui-p-sb (Instr: 399 words, Data: 4 words) ---
+    # [PASS] rv32ui-p-sb.instr.hex (gp=1, cycles=488)
+
+--- Running rv32ui-p-sh (Instr: 431 words, Data: 8 words) ---
+    # [PASS] rv32ui-p-sh.instr.hex (gp=1, cycles=541)
+
+--- Running rv32ui-p-simple (Instr: 111 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-simple.instr.hex (gp=1, cycles=75)
+
+--- Running rv32ui-p-sll (Instr: 463 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-sll.instr.hex (gp=1, cycles=527)
+
+--- Running rv32ui-p-slli (Instr: 287 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-slli.instr.hex (gp=1, cycles=275)
+
+--- Running rv32ui-p-slt (Instr: 431 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-slt.instr.hex (gp=1, cycles=493)
+
+--- Running rv32ui-p-slti (Instr: 271 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-slti.instr.hex (gp=1, cycles=271)
+
+--- Running rv32ui-p-sltiu (Instr: 271 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-sltiu.instr.hex (gp=1, cycles=271)
+
+--- Running rv32ui-p-sltu (Instr: 431 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-sltu.instr.hex (gp=1, cycles=493)
+
+--- Running rv32ui-p-sra (Instr: 479 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-sra.instr.hex (gp=1, cycles=546)
+
+--- Running rv32ui-p-srai (Instr: 287 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-srai.instr.hex (gp=1, cycles=290)
+
+--- Running rv32ui-p-srl (Instr: 479 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-srl.instr.hex (gp=1, cycles=540)
+
+--- Running rv32ui-p-srli (Instr: 287 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-srli.instr.hex (gp=1, cycles=284)
+
+--- Running rv32ui-p-sub (Instr: 431 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-sub.instr.hex (gp=1, cycles=491)
+
+--- Running rv32ui-p-sw (Instr: 447 words, Data: 12 words) ---
+    # [PASS] rv32ui-p-sw.instr.hex (gp=1, cycles=548)
+
+--- Running rv32ui-p-xor (Instr: 431 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-xor.instr.hex (gp=1, cycles=521)
+
+--- Running rv32ui-p-xori (Instr: 239 words, Data: 0 words) ---
+    # [PASS] rv32ui-p-xori.instr.hex (gp=1, cycles=241)
+
+======================================================================
+SUMMARY
+======================================================================
+  [         PASS] rv32ui-p-add
+  [         PASS] rv32ui-p-addi
+  [         PASS] rv32ui-p-and
+  [         PASS] rv32ui-p-andi
+  [         PASS] rv32ui-p-auipc
+  [         PASS] rv32ui-p-beq
+  [         PASS] rv32ui-p-bge
+  [         PASS] rv32ui-p-bgeu
+  [         PASS] rv32ui-p-blt
+  [         PASS] rv32ui-p-bltu
+  [         PASS] rv32ui-p-bne
+  [      TIMEOUT] rv32ui-p-fence_i
+  [         PASS] rv32ui-p-jal
+  [         PASS] rv32ui-p-jalr
+  [         PASS] rv32ui-p-lb
+  [         PASS] rv32ui-p-lbu
+  [         PASS] rv32ui-p-lh
+  [         PASS] rv32ui-p-lhu
+  [         PASS] rv32ui-p-lui
+  [         PASS] rv32ui-p-lw
+  [         FAIL] rv32ui-p-ma_data
+  [         PASS] rv32ui-p-or
+  [         PASS] rv32ui-p-ori
+  [         PASS] rv32ui-p-sb
+  [         PASS] rv32ui-p-sh
+  [         PASS] rv32ui-p-simple
+  [         PASS] rv32ui-p-sll
+  [         PASS] rv32ui-p-slli
+  [         PASS] rv32ui-p-slt
+  [         PASS] rv32ui-p-slti
+  [         PASS] rv32ui-p-sltiu
+  [         PASS] rv32ui-p-sltu
+  [         PASS] rv32ui-p-sra
+  [         PASS] rv32ui-p-srai
+  [         PASS] rv32ui-p-srl
+  [         PASS] rv32ui-p-srli
+  [         PASS] rv32ui-p-sub
+  [         PASS] rv32ui-p-sw
+  [         PASS] rv32ui-p-xor
+  [         PASS] rv32ui-p-xori
+----------------------------------------------------------------------
+Total: 40   Passed: 38   Failed: 2   Skipped: 0
+
+Failing tests:
+  rv32ui-p-fence_i [TIMEOUT]: # [TIMEOUT] rv32ui-p-fence_i.instr.hex: exceeded 100000 cycles without reaching ecall (stuck PC=0x2040)
+  rv32ui-p-ma_data [FAIL]: # [FAIL] rv32ui-p-ma_data.instr.hex: check #1 failed (a0=0x3, gp=0x3, cycles=83)
